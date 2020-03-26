@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* -------- CSS Stuff for the Board/Pad -----------*/
+.header{
+  text-align: center;
+}
+ .pad {
+    margin: 20px auto;
+    height: 375px;
+    width: 450px;
+    background-color: rgb(100, 100, 100);
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 230px 180px;
+    grid-template-rows: auto; 
+    text-align: center;
+  }
+
+  .board{
+    height: 175px;
+    width: 225px;
+    border: 1px solid black;
+    background-color: rgb(215, 215, 215);
+    border-radius: 20px;
+    text-align: center;
+  }
+  /* .one{
+    color:red;
+  }
+  .inputPad{
+    height: 80%;
+    width: 75px;
+    border: 1px solid black;
+    background-color: rgb(215, 215, 215);
+    border-radius: 20%;
+    text-align: center;
+    display: grid;
+  }
+  .inputBoard{
+    margin: 2%;
+    padding-left: 3%;
+    height: 400px;
+    width: 200px;
+    background-color: rgb(65, 40, 175);
+    border-radius: 1%;
+    border: 5px solid black;
+    display: grid;
+    grid-template-columns: 85px 5px;
+    justify-content: left;
+    
+    align-content: center;
+  } */
+  .red{
+    color:red;
+  }
+  .blue{
+    color: blue;
+  }
+  .green{
+    color: green;
+  }
+  .yellow{
+    color: yellow;
+  }
+  .black{
+    color: black;
+  }
+  .purple{
+    color: purple;
+  }
+  .white{
+    color: white;
+  }
+  .brown{
+    color: brown;
+  }
+  .grey{
+    color: grey;
+  }

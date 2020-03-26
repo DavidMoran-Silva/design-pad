@@ -1,0 +1,63 @@
+.header{
+    margin: 5%;
+    text-align: left;
+  }
+.inputPad{
+    height: 90%;
+    width: 80px;
+    border: 1px solid black;
+    background-color: rgb(215, 215, 215);
+    border-radius: 10%;
+    text-align: center;
+    display: grid;
+  }
+  .inputBoard{
+    margin: 2%;
+    padding-left: 3%;
+    height: 400px;
+    width: 200px;
+    background-color: rgb(65, 40, 175);
+    border-radius: 1%;
+    border: 5px solid black;
+    display: grid;
+    grid-template-columns: 90px 15px;
+    grid-template-rows: 80px 80px 80px 80px;
+    justify-content: left;
+    align-content: center;
+  }
+  .isColor{
+    color:red;
+    color: blue;
+    color: green;
+    color: yellow;
+    color: black;
+    color: purple;
+    color: white;
+    color: brown;
+    height: 90%;
+    width: 80px;
+  }
+  .red{
+    color:red;
+  }
+  .blue{
+    color: blue;
+  }
+  .green{
+    color: green;
+  }
+  .yellow{
+    color: yellow;
+  }
+  .black{
+    color: black;
+  }
+  .purple{
+    color: purple;
+  }
+  .white{
+    color: white;
+  }
+  .brown{
+    color: brown;
+  }
