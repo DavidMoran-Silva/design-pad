@@ -4,24 +4,36 @@ import "../App.css";
 
 
 function Pad(props){
+    const[color,setColor] = useState("white")      //hooks
+    //color will hold val in useState 
+    //setColor updates val
+
+
     const drop = e => {
         e.preventDefault();
-        const colorID = e.dataTransfer.getData('isColor');
+        const colorID = e.dataTransfer.getData('Color');
 
-        const isColor = document.getElementById('yellow', "red", "blue", "green", "brown", "black", "white", "purple");
-        
-        e.target.appendChild('isColor');
+        setColor(colorID)
+       // const isColor = document.getElementById(colorID);
+    
+        // 
     }
+    
+    
 
     const dragOver = e =>{
         e.preventDefault();
     }
+
+
+
     return(
         <div 
         id={props.id} 
         onDrop={drop} 
         onDragOver={dragOver} 
         className={props.className, "board"} 
+        style = {{backgroundColor:color}}
         >
             
             <h4>{props.children}</h4>
@@ -47,6 +59,8 @@ function DesignBoard()
         
     );
 }
+
+
 
 
 export default DesignBoard;

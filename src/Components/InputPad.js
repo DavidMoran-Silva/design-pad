@@ -4,14 +4,15 @@ import './InputPad.css';
 function Pad(props){
     const dragStart = e =>{
         const target = e.target;
-        e.dataTransfer.setData('Color', target.id);
-        setTimeout(() => {
-            target.style.display = "none";
-        }, 0)
+        e.dataTransfer.setData('Color', props.isColor);
+        // setTimeout(() => {
+        //     target.style.display = "";
+        // }, 0)
     }
     const dragOver = e =>{
         e.stopPropagation();
     }
+
 
     return(
         <div 
